@@ -17,8 +17,8 @@ public class Demo1 {
 		driver.findElement(By.name("username")).sendKeys("admin");
 		driver.findElement(By.name("pwd")).sendKeys("manager");
 		driver.findElement(By.xpath("//a[text()='Login']")).click();
-		WebDriverWait wait=new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.titleContains("hello"));
+		//WebDriverWait wait=new WebDriverWait(driver,10);
+		//wait.until(ExpectedConditions.titleContains("hello"));
 		String title = driver.getTitle();
 		System.out.println(title);
 	}
